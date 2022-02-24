@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+body::after {
+	content: "";
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;
+	background-image: url(../bg.png);
+}
+
+.header{
+	margin:0;
+	padding:0;
+	height: 150px;
+	content: "";
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position:absolute;
+	z-index: -1;
+	background-image: url(../t4.jpg);
+}
+ul.left{
+	margin-right: 300px;
+}
+ul.left li {
+	float: right;
+}
+ul.left li a {
+	padding: 8px;
+}
+ul {
+	list-style-type: none;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	padding: 0;
+	overflow: hidden;
+	display:inline-block;
+}
+
+ul.right li {
+	float: right;
+	padding-left: 10px;
+}
+
+ul li a{
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+ul.right li a {
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+}
+
+
+ul.right li a:hover {
+	text-decoration: none;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;  
+}
+
+ul.right li a.active{
+	text-decoration: none;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000; 
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+}
+
+a.act {
+	text-decoration: underline;
+}
+.content .p-r {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #000;
+	text-decoration: underline;
+}
+
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.content{
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top: 70px
+}
+.content table {
+	border-collapse: collapse;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.content table td {
+	border: thin solid #000;
+	background-color: #FFF;
+	padding: 25px;
+}
+.content table th {
+	border: thin none;
+	padding-bottom: 10px;
+}
+
+.chat {
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #0C3;
+	height: 75px;
+	width: 75px;
+	text-align: center;
+	border-radius: 50%;
+	display: block;
+	cursor: pointer;
+	border: thin none #000;
+	margin-bottom:15px;
+	margin-right: 15px;
+}
+.chat img {
+	margin-top: 10px;
+}
+

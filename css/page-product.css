@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	color:#000;
+}
+*{
+	font-family:Arial, Helvetica, sans-serif;
+}
+body {
+	width: 1200px;
+}
+body::after {
+	content: "";
+	opacity: 0.07;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;
+	background-image: url(../bg.png);
+}
+
+.header{
+	margin:0;
+	padding:0;
+	height: 150px;
+	content: "";
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position:absolute;
+	z-index: -1;
+	background-image: url(../t4.jpg);
+}
+ul.left{
+	float: left;
+	margin-top: 50px;
+}
+ul.left li {
+	float: right;
+}
+ul.left li a {
+	padding: 8px;
+}
+ul {
+	list-style-type: none;
+	margin-top: 50px;
+	margin-right: 10px;
+	padding: 0;
+	overflow: hidden;
+	display:inline-block;
+	height: 70px;
+}
+
+ul.right li {
+	float: right;
+	padding-left: 10px;
+}
+
+ul li a{
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+ul.right li a {
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+}
+
+
+ul.right li a:hover {
+	text-decoration: none;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;  
+}
+
+ul.right li a.active{
+	text-decoration: none;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000; 
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content a {
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+}
+.dropdown-content.user a {
+	display: block;
+	padding: 15px;
+	text-align:center;
+}
+a.act {
+	text-decoration: underline;
+}
+.content .p-r {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #000;
+	text-decoration: underline;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.chat {
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #2b5336;
+	height: 75px;
+	width: 75px;
+	text-align: center;
+	border-radius: 50%;
+	display: block;
+	cursor: pointer;
+	border: thin none #000;
+	margin-bottom:15px;
+	margin-right: 15px;
+}
+.chat img {
+	margin-top: 10px;
+	filter: brightness(0) invert(1);
+}
+.content{
+	margin-right: 150px;
+	padding-top: 70px
+}
+.content .head-content .head-left .active {
+	color: #090;
+}
+
+.content .head-content {
+	font-size: 14px;
+	display:block;
+}
+.content .head-content .prev, .content .head-content .next {
+	color: #333;
+	text-decoration: none;
+}
+.content .head-content .head-left {
+	display: inline-block;
+	float:left;
+}
+.content .head-content .head-left span .prod {
+	text-decoration: none;
+}
+.content .product {
+	width:100%;
+	margin-top:20px;
+}
+.content .product .desc-content {
+	float: left;
+	width:50%;
+}
+.content .product .cart-content {
+	text-align: left;
+	width:48%;
+}
+.content .product .cart-content .name, .content .product .cart-content .price {
+	font-size: 24px;
+	color: #666;
+	padding-top: 30px;
+}
+.content .product .cart-content input.qty {
+	width: 50px;
+	height: 30px;
+	border: thin solid #999;
+	text-align: center;
+}
+.content .product .cart-content p.qty {
+	font-size: 14px;
+	padding-top: 30px;
+}
+.content .product .cart-content .btn-pay {
+	font-size: 20px;
+	color: #FFF;
+	background-color: #2b5336;
+	height: 45px;
+	width: 300px;
+	border: thin none #000;
+	cursor: pointer;
+	margin-top: 55px;
+}
